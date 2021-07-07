@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Start your development with a Design System for Bootstrap 4.">  
+  <meta name="author" content="Creative Tim">
+  <title>Peta Kecamatan di kabuaten Semarang</title>
+  <link href="./assets/img/brand/oke.png" rel="icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+  <link type="text/css" href="./assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+        <link rel="stylesheet" href="./css/qgis2web.css">
+        <style>
+            #map {
+                width: 867px;
+                height: 896px;
+            }
+            </style>
+            <title></title>
+
+</head>
+
+<body>
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="../index.html">
+          <img src="./assets/img/brand/se.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="../index.html">
+                  <img src="./assets/img/brand/oke.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item dropdown">
+              
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                      <i class="ni ni-collection d-lg-none"></i>
+                      <span class="nav-link-inner--text">Peta Sistem Informasi Geografis</span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="../1/1.html" class="dropdown-item">Peta Kecamatan Di Kabupaten Semarang</a>
+                      <a href="../2/2.html" class="dropdown-item">Peta Jumlah Data Siswa SD</a>
+                      <a href="../3/3.html" class="dropdown-item">Peta Jumlah Guru SD</a>
+                      <a href="../4/4.html" class="dropdown-item">Peta Jumlah Sekolah tingkat Dasar</a>
+                      </div>
+                  </li>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+      
+
+
+<!-- Kontak -->
+
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.facebook.com/dhimasaria.wardhana.3" target="_blank" data-toggle="tooltip" title="Ikuti Di Facebook">
+                <i class="fa fa-facebook-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Facebook</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.instagram.com/dhimasariawardhana/?utm_medium=copy_link" target="_blank" data-toggle="tooltip" title="Follow Instagramku">
+                <i class="fa fa-instagram"></i>
+                <span class="nav-link-inner--text d-lg-none">Instagram</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://twitter.com/dhim6666?s=09"" target="_blank" data-toggle="tooltip" title="Follow Twitterku">
+                <i class="fa fa-twitter-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Twitter</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.youtube.com/channel/UCI5oeTvondtterjszBM_6oQ" target="_blank" data-toggle="tooltip" title="Lihat YouTubeku">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                <span class="nav-link-inner--text d-lg-none">YouTube</span>
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block ml-lg-4">   
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <main>
+    <div class="position-relative">
+
+      <section class="section section-lg section-hero section-shaped">
+        <!-- Background circles -->
+        <div class="shape shape-style-1 shape-primary">
+          <span class="span-150"></span>
+          <span class="span-50"></span>
+          <span class="span-50"></span>
+          <span class="span-75"></span>
+          <span class="span-100"></span>
+          <span class="span-75"></span>
+          <span class="span-50"></span>
+          <span class="span-100"></span>
+          <span class="span-50"></span>
+          <span class="span-100"></span>
+        </div>
+        <div class="container shape-container d-flex align-items-center py-lg">
+          <div class="col px-0">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 text-center">
+                <img src="./assets/img/brand/oke.png" style="width: 200px;" class="img-fluid">
+                
+                <h6 class="h5 text-success font-weight-bold mb-5">Peta Kecamatan di kabuaten Semarang</h6>
+                <div class="btn-wrapper mt-5">
+                </div>
+                <div class="mt-5">
+                
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew zindex-100">
+          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </section>
+    </div>
+    <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+
+
+          
+            <center><p>Peta dibawah Menunjukan ada 19 Kecamatan yang ada di kabupaten Semarang yang dibedakan dengan berbagai warna.</p></center>
+            
+
+<!-- Semarang -->
+    <center>         
+<div id="map">
+  </div>
+  <script src="js/qgis2web_expressions.js"></script>
+  <script src="http://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="js/leaflet.rotatedMarker.js"></script>
+  <script src="js/leaflet.pattern.js"></script>
+  <script src="js/leaflet-hash.js"></script>
+  <script src="js/Autolinker.min.js"></script>
+  <script src="js/rbush.min.js"></script>
+  <script src="js/labelgun.min.js"></script>
+  <script src="js/labels.js"></script>
+  <script src="data/PetaKecamatandiKabupatenSemarang_0.js"></script>
+  <script>
+  var map = L.map('map', {
+      zoomControl:true, maxZoom:28, minZoom:1
+  })
+  var hash = new L.Hash(map);
+  map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+  var bounds_group = new L.featureGroup([]);
+  var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+      maxZoom: 28
+  });
+  basemap0.addTo(map);
+  function setBounds() {
+      if (bounds_group.getLayers().length) {
+          map.fitBounds(bounds_group.getBounds());
+      }
+  }
+  function pop_PetaKecamatandiKabupatenSemarang_0(feature, layer) {
+      var popupContent = '<table>\
+              <tr>\
+                  <td colspan="2">' + (feature.properties['Kecamatan'] !== null ? Autolinker.link(String(feature.properties['Kecamatan'])) : '') + '</td>\
+              </tr>\
+          </table>';
+      layer.bindPopup(popupContent, {maxHeight: 400});
+  }
+
+  function style_PetaKecamatandiKabupatenSemarang_0_0(feature) {
+      switch(String(feature.properties['Kecamatan'])) {
+          case 'Ambarawa':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(169,75,223,1.0)',
+      }
+              break;
+          case 'Bancak':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(69,236,156,1.0)',
+      }
+              break;
+          case 'Bandungan':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(95,91,225,1.0)',
+      }
+              break;
+          case 'Banyubiru':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(85,208,74,1.0)',
+      }
+              break;
+          case 'Bawen':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(161,132,219,1.0)',
+      }
+              break;
+          case 'Bergas':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(203,175,103,1.0)',
+      }
+              break;
+          case 'Bringin':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(109,214,228,1.0)',
+      }
+              break;
+          case 'Getasan':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(137,232,215,1.0)',
+      }
+              break;
+          case 'Jambu':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(52,157,231,1.0)',
+      }
+              break;
+          case 'Kaliwungu':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(221,76,103,1.0)',
+      }
+              break;
+          case 'Pabelan':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(231,114,99,1.0)',
+      }
+              break;
+          case 'Pringapus':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(218,219,128,1.0)',
+      }
+              break;
+          case 'Sumowono':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(61,111,236,1.0)',
+      }
+              break;
+          case 'Suruh':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(227,20,182,1.0)',
+      }
+              break;
+          case 'Susukan':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(205,72,137,1.0)',
+      }
+              break;
+          case 'Tengaran':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(180,217,99,1.0)',
+      }
+              break;
+          case 'Tuntang':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(216,22,233,1.0)',
+      }
+              break;
+          case 'Ungaran Barat':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(156,210,123,1.0)',
+      }
+              break;
+          case 'Ungaran Timur':
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(64,234,101,1.0)',
+      }
+              break;
+          default:
+              return {
+          pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+          opacity: 1,
+          color: 'rgba(0,0,0,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 1.0, 
+          fill: true,
+          fillOpacity: 1,
+          fillColor: 'rgba(233,172,128,1.0)',
+      }
+              break;
+      }
+  }
+  map.createPane('pane_PetaKecamatandiKabupatenSemarang_0');
+  map.getPane('pane_PetaKecamatandiKabupatenSemarang_0').style.zIndex = 400;
+  map.getPane('pane_PetaKecamatandiKabupatenSemarang_0').style['mix-blend-mode'] = 'normal';
+  var layer_PetaKecamatandiKabupatenSemarang_0 = new L.geoJson(json_PetaKecamatandiKabupatenSemarang_0, {
+      attribution: '<a href=""></a>',
+      pane: 'pane_PetaKecamatandiKabupatenSemarang_0',
+      onEachFeature: pop_PetaKecamatandiKabupatenSemarang_0,
+      style: style_PetaKecamatandiKabupatenSemarang_0_0,
+  });
+  bounds_group.addLayer(layer_PetaKecamatandiKabupatenSemarang_0);
+  map.addLayer(layer_PetaKecamatandiKabupatenSemarang_0);
+  var baseMaps = {};
+  L.control.layers(baseMaps,{'Peta Kecamatan di Kabupaten Semarang<br /><table><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Ambarawa0.png" /></td><td>Ambarawa</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Bancak1.png" /></td><td>Bancak</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Bandungan2.png" /></td><td>Bandungan</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Banyubiru3.png" /></td><td>Banyubiru</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Bawen4.png" /></td><td>Bawen</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Bergas5.png" /></td><td>Bergas</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Bringin6.png" /></td><td>Bringin</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Getasan7.png" /></td><td>Getasan</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Jambu8.png" /></td><td>Jambu</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Kaliwungu9.png" /></td><td>Kaliwungu</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Pabelan10.png" /></td><td>Pabelan</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Pringapus11.png" /></td><td>Pringapus</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Sumowono12.png" /></td><td>Sumowono</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Suruh13.png" /></td><td>Suruh</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Susukan14.png" /></td><td>Susukan</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Tengaran15.png" /></td><td>Tengaran</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_Tuntang16.png" /></td><td>Tuntang</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_UngaranBarat17.png" /></td><td>Ungaran Barat</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_UngaranTimur18.png" /></td><td>Ungaran Timur</td></tr><tr><td style="text-align: center;"><img src="legend/PetaKecamatandiKabupatenSemarang_0_19.png" /></td><td></td></tr></table>': layer_PetaKecamatandiKabupatenSemarang_0,}).addTo(map);
+  setBounds();
+  var i = 0;
+  layer_PetaKecamatandiKabupatenSemarang_0.eachLayer(function(layer) {
+      var context = {
+          feature: layer.feature,
+          variables: {}
+      };
+      layer.bindTooltip((layer.feature.properties['Kecamatan'] !== null?String('<div style="color: #000000; font-size: 8pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['Kecamatan']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PetaKecamatandiKabupatenSemarang_0'});
+      labels.push(layer);
+      totalMarkers += 1;
+        layer.added = true;
+        addLabel(layer, i);
+        i++;
+  });
+  resetLabels([layer_PetaKecamatandiKabupatenSemarang_0]);
+  map.on("zoomend", function(){
+      resetLabels([layer_PetaKecamatandiKabupatenSemarang_0]);
+  });
+  map.on("layeradd", function(){
+      resetLabels([layer_PetaKecamatandiKabupatenSemarang_0]);
+  });
+  map.on("layerremove", function(){
+      resetLabels([layer_PetaKecamatandiKabupatenSemarang_0]);
+  });
+</script>
+    </body>
+    </html>
+</center>
+
+
+
+
+<!-- Bawah -->
+<center>------------------------------------------------------------------------------------</center>
+    <div class="container">
+      <div class="row row-grid align-items-center my-md">
+        
+      <hr>
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2021
+            <a href="" target="_blank">Dhimas Aria Wardhana</a>.
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-lg-center btn-wrapper">
+            <a target="_blank" href="https://twitter.com/dhim6666?s=09" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip" data-original-title="Follow Twitterku">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/dhimasaria.wardhana.3" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Ikuti Di Facebook">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/dhimasariawardhana/?utm_medium=copy_link" class="btn btn-neutral btn-icon-only btn-instagram btn-lg btn-round" data-toggle="tooltip" data-original-title="Follow Instagramku">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCI5oeTvondtterjszBM_6oQ" class="btn btn-neutral btn-icon-only btn-youtube btn-round btn-lg" data-toggle="tooltip" data-original-title="Lihat YouTubeku">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
+        
+
+        <div class="col-md-6">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/vendor/jquery/jquery.min.js"></script>
+  <script src="./assets/vendor/popper/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/vendor/headroom/headroom.min.js"></script>
+  <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="./assets/js/argon.js?v=1.0.1"></script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!doctype html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Start your development with a Design System for Bootstrap 4.">  
+        <meta name="author" content="Creative Tim">
+        <title>Peta Jumlah Data Siswa</title>
+        <link href="./assets/img/brand/oke.png" rel="icon" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+        <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+        <link type="text/css" href="./assets/css/docs.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+              <link rel="stylesheet" href="./css/qgis2web.css">
+              <style>
+                  #map {
+                      width: 867px;
+                      height: 896px;
+                  }
+                  </style>
+                  <title></title>
+    </head>
+
+
+    
+    <body>
+
+
+            <header class="header-global">
+                    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+                      <div class="container">
+                        <a class="navbar-brand mr-lg-5" href="../index.html">
+                          <img src="./assets/img/brand/se.png">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse" id="navbar_global">
+                          <div class="navbar-collapse-header">
+                            <div class="row">
+                              <div class="col-6 collapse-brand">
+                                <a href="../index.html">
+                                  <img src="./assets/img/brand/blue.png">
+                                </a>
+                              </div>
+                              <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span></span>
+                                  <span></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                            <li class="nav-item dropdown">
+                              
+                                  <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                                      <i class="ni ni-collection d-lg-none"></i>
+                                      <span class="nav-link-inner--text">Peta Sistem Informasi dan Geografis</span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a href="../1/1.html" class="dropdown-item">Peta Kecamatan Di Kabupaten Semarang</a>
+                                      <a href="./2.html" class="dropdown-item">Peta Jumlah Data Siswa SD</a>
+                                      <a href="../3/3.html" class="dropdown-item">Peta Jumlah Guru SD</a>
+                                      <a href="../4/4.html" class="dropdown-item">Peta Jumlah Sekolah tingkat Dasar</a>
+                                    </div>
+                                  </li>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                
+                      
+                
+                
+                <!-- Kontak -->
+                
+                          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                            <li class="nav-item">
+                              <a class="nav-link nav-link-icon" href="https://www.facebook.com/dhimasaria.wardhana.3" target="_blank" data-toggle="tooltip" title="Ikuti Di Facebook">
+                                <i class="fa fa-facebook-square"></i>
+                                <span class="nav-link-inner--text d-lg-none">Facebook</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link nav-link-icon" href="https://www.instagram.com/dhimasariawardhana/?utm_medium=copy_link" target="_blank" data-toggle="tooltip" title="Follow Instagramku">
+                                <i class="fa fa-instagram"></i>
+                                <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link nav-link-icon" href="https://twitter.com/dhim6666?s=09"" target="_blank" data-toggle="tooltip" title="Follow Twitterku">
+                                <i class="fa fa-twitter-square"></i>
+                                <span class="nav-link-inner--text d-lg-none">Twitter</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link nav-link-icon" href="https://www.youtube.com/channel/UCI5oeTvondtterjszBM_6oQ" target="_blank" data-toggle="tooltip" title="Lihat YouTubeku">
+                                <i class="fa fa-youtube-play"></i>
+                                <span class="nav-link-inner--text d-lg-none">YouTube</span>
+                              </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block ml-lg-4">   
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  </header>
+                
+                
+                
+                
+                  <main>
+                    <div class="position-relative">
+                
+                      <section class="section section-lg section-hero section-shaped">
+                        <!-- Background circles -->
+                        <div class="shape shape-style-1 shape-primary">
+                          <span class="span-150"></span>
+                          <span class="span-50"></span>
+                          <span class="span-50"></span>
+                          <span class="span-75"></span>
+                          <span class="span-100"></span>
+                          <span class="span-75"></span>
+                          <span class="span-50"></span>
+                          <span class="span-100"></span>
+                          <span class="span-50"></span>
+                          <span class="span-100"></span>
+                        </div>
+                        <div class="container shape-container d-flex align-items-center py-lg">
+                          <div class="col px-0">
+                            <div class="row align-items-center justify-content-center">
+                              <div class="col-lg-6 text-center">
+                                <img src="./assets/img/brand/oke.png" style="width: 200px;" class="img-fluid">
+                                
+                                <h6 class="h5 text-success font-weight-bold mb-5">Peta Data Siswa SD</h6>
+                                <div class="btn-wrapper mt-5">
+                                </div>
+                                <div class="mt-5">
+                                
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- SVG separator -->
+                        <div class="separator separator-bottom separator-skew zindex-100">
+                          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                          </svg>
+                        </div>
+                      </section>
+                    </div>
+                    <section class="section section-components pb-0" id="section-components">
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-12">
+
+                              <center><p>Peta dibawah Menunjukan ada 5 Tingkatan Jumlah Siswa yang ada di tiap - tiap kecamatan di daerah Kabupaten Semarang yang sudah dibedakan dalam 5 warna agar lebih mudah memahaminya.</p></center>
+            
+
+
+
+                
+<center>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/datasiswa_1.js"></script>
+        <script>
+        var highlightLayer;
+        function highlightFeature(e) {
+            highlightLayer = e.target;
+
+            if (e.target.feature.geometry.type === 'LineString') {
+              highlightLayer.setStyle({
+                color: '#ffff00',
+              });
+            } else {
+              highlightLayer.setStyle({
+                fillColor: '#ffff00',
+                fillOpacity: 1
+              });
+            }
+            highlightLayer.openPopup();
+        }
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[-7.45934539133,110.133872907],[-7.05365518003,110.770877712]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        L.control.locate().addTo(map);
+        var bounds_group = new L.featureGroup([]);
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap0.addTo(map);
+        function setBounds() {
+        }
+        var overlay_GoogleRoad_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            opacity: 1.0
+        });
+        overlay_GoogleRoad_0.addTo(map);
+        map.addLayer(overlay_GoogleRoad_0);
+        function pop_datasiswa_1(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Kecamatan</th>\
+                        <td>' + (feature.properties['Kecamatan'] !== null ? Autolinker.link(String(feature.properties['Kecamatan'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Siswa</th>\
+                        <td>' + (feature.properties['Siswa'] !== null ? Autolinker.link(String(feature.properties['Siswa'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_datasiswa_1_0(feature) {
+            if (feature.properties['Siswa'] >= 0.000000 && feature.properties['Siswa'] <= 1800.000000 ) {
+                return {
+                pane: 'pane_datasiswa_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(247,251,255,1.0)',
+            }
+            }
+            if (feature.properties['Siswa'] >= 1800.000000 && feature.properties['Siswa'] <= 3600.000000 ) {
+                return {
+                pane: 'pane_datasiswa_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(200,221,240,1.0)',
+            }
+            }
+            if (feature.properties['Siswa'] >= 3600.000000 && feature.properties['Siswa'] <= 5400.000000 ) {
+                return {
+                pane: 'pane_datasiswa_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(115,179,216,1.0)',
+            }
+            }
+            if (feature.properties['Siswa'] >= 5400.000000 && feature.properties['Siswa'] <= 7200.000000 ) {
+                return {
+                pane: 'pane_datasiswa_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(40,121,185,1.0)',
+            }
+            }
+            if (feature.properties['Siswa'] >= 7200.000000 && feature.properties['Siswa'] <= 9000.000000 ) {
+                return {
+                pane: 'pane_datasiswa_1',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(8,48,107,1.0)',
+            }
+            }
+        }
+        map.createPane('pane_datasiswa_1');
+        map.getPane('pane_datasiswa_1').style.zIndex = 401;
+        map.getPane('pane_datasiswa_1').style['mix-blend-mode'] = 'normal';
+        var layer_datasiswa_1 = new L.geoJson(json_datasiswa_1, {
+            attribution: '<a href=""></a>',
+            pane: 'pane_datasiswa_1',
+            onEachFeature: pop_datasiswa_1,
+            style: style_datasiswa_1_0,
+        });
+        bounds_group.addLayer(layer_datasiswa_1);
+        map.addLayer(layer_datasiswa_1);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'data siswa<br /><table><tr><td style="text-align: center;"><img src="legend/datasiswa_1_01800Sedikit0.png" /></td><td>0-1800(Sedikit)</td></tr><tr><td style="text-align: center;"><img src="legend/datasiswa_1_18003600CukupSedikit1.png" /></td><td>1800-3600(Cukup Sedikit)</td></tr><tr><td style="text-align: center;"><img src="legend/datasiswa_1_36005400Cukup2.png" /></td><td>3600-5400(Cukup)</td></tr><tr><td style="text-align: center;"><img src="legend/datasiswa_1_54007200CukupBanyak3.png" /></td><td>5400-7200(Cukup Banyak)</td></tr><tr><td style="text-align: center;"><img src="legend/datasiswa_1_72009000Banyak4.png" /></td><td>7200-9000(Banyak)</td></tr></table>': layer_datasiswa_1,"Google Road": overlay_GoogleRoad_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        var i = 0;
+        layer_datasiswa_1.eachLayer(function(layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['Kecamatan'] !== null?String('<div style="color: #000000; font-size: 8pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['Kecamatan']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_datasiswa_1'});
+            labels.push(layer);
+            totalMarkers += 1;
+              layer.added = true;
+              addLabel(layer, i);
+              i++;
+        });
+        resetLabels([layer_datasiswa_1]);
+        map.on("zoomend", function(){
+            resetLabels([layer_datasiswa_1]);
+        });
+        map.on("layeradd", function(){
+            resetLabels([layer_datasiswa_1]);
+        });
+        map.on("layerremove", function(){
+            resetLabels([layer_datasiswa_1]);
+        });
+        </script>
+    </body>
+</html>
+</center>
+
+<center><h3 class="h4 text-success font-weight-bold mb-4">Data Siswa SD Kab.Semarang - Dapodikdasmen</h3></center>
+<center><img src="./assets/img/theme/siswa1.jpg"></center>
+
+<!-- Bawah -->
+<center>------------------------------------------------------------------------------------</center>
+    <div class="container">
+      <div class="row row-grid align-items-center my-md">
+        
+      <hr>
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2021
+            <a href="" target="_blank">Dhimas Aria Wardhana</a>.
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-lg-center btn-wrapper">
+            <a target="_blank" href="https://twitter.com/dhim6666?s=09" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip" data-original-title="Follow Twitterku">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/dhimasaria.wardhana.3" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Ikuti Di Facebook">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/dhimasariawardhana/?utm_medium=copy_link" class="btn btn-neutral btn-icon-only btn-instagram btn-lg btn-round" data-toggle="tooltip" data-original-title="Follow Instagramku">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCI5oeTvondtterjszBM_6oQ" class="btn btn-neutral btn-icon-only btn-youtube btn-round btn-lg" data-toggle="tooltip" data-original-title="Lihat YouTube">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
+        
+
+        <div class="col-md-6">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/vendor/jquery/jquery.min.js"></script>
+  <script src="./assets/vendor/popper/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/vendor/headroom/headroom.min.js"></script>
+  <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="./assets/js/argon.js?v=1.0.1"></script>
+</body>
+
+</html>
